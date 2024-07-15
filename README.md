@@ -16,9 +16,13 @@ where $\alpha,\omega \, \text{and} \,\sigma$ are spatially varying coefficients.
 This paper [Yilmazer et al.(2022)](https://arxiv.org/pdf/2208.02114) shows how one can calculate the derivate with respect to a parameter $\pi$ with the condition that the **domain remains unchanged**.
 
 A recent paper by [Yu et at. (2024)](https://www.shuangz.com/projects/diff-wos-sg24/diff-wos-sg24.pdf) shows how we can calculate the derivative to the solution to our PDE w.r.t. a parameter $\theta$ which changes also the boundary shape. However, **this has only been done for the Poisson problem** where our condition is that: 
-$$ \Delta u = -f \text{ on } \Omega $$
- and 
-$$ u = g \text { on } \partial \Omega $$
+$$
+   \begin{array}{rcll}
+     \Delta u &=& -f \text{ on } \Omega \\
+     u &=& g \text { on } \partial \Omega
+   \end{array}
+$$
+
 
 We will be working on extending this result to the general case of equation (1).
 # Contents
