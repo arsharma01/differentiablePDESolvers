@@ -43,3 +43,10 @@ $$
 This uses the Walk On Spheres (WoS) method and also solves for the gradient of the solution. 
 
 We are working on providing modules to solve PDEs with the general conditions (1) and once we have worked out the math for differentiating w.r.t. a parameter that changes the domain shape, we will also supplement code to solve for that.  
+
+
+# Example README
+
+Here is a case statement in LaTeX:
+
+![cases](https://latex.codecogs.com/png.latex?%5Cbegin%7Bcases%7D%20a%20%26%20%5Ctext%7Bif%20%7D%20b%20%5C%5C%20c%20%26%20%5Ctext%7Bif%20%7D%20d%20%5Cend%7Bcases%7D)
