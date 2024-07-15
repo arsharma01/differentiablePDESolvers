@@ -3,6 +3,16 @@ From heat sinks in computers to airplane wings, Partial Differential Equations (
 
 # Description of Previous Work
 Our primary source paper is [this paper from Sawhney and Crane](https://cs.dartmouth.edu/~wjarosz/publications/sawhneyseyb22gridfree.html) where we have a stochastic method to solve PDEs of the form 
+
+$$
+CE(p,y)=\left\{
+\begin{array}{ll}
+-\log(p) &\text{if }y=1 \\ 
+-\log(1-p) &\text{otherwise}.
+\end{array} 
+\right.
+$$
+
 <div>
 $$
 \begin{cases}\tag{1}
@@ -20,6 +30,7 @@ $$
     }
   });
 </script>
+
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
