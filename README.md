@@ -5,36 +5,11 @@ From heat sinks in computers to airplane wings, Partial Differential Equations (
 Our primary source paper is [this paper from Sawhney and Crane](https://cs.dartmouth.edu/~wjarosz/publications/sawhneyseyb22gridfree.html) where we have a stochastic method to solve PDEs of the form 
 
 $$
-CE(p,y)=\left\{
-\begin{array}{ll}
--\log(p) &\text{if }y=1 \\ 
--\log(1-p) &\text{otherwise}.
-\end{array} 
-\right.
+   \begin{array}{rcll}\tag{1}
+    \nabla\cdot(\alpha\nabla u) + \omega \cdot \nabla u - \sigma u &=& f & \text{ on } \Omega \\
+    u &=& g & \text{ on } \partial \Omega
+   \end{array}
 $$
-
-<div>
-$$
-\begin{cases}\tag{1}
-\nabla\cdot(\alpha\nabla u) + \omega \cdot \nabla u - \sigma u = f & \text{ on } \Omega \\
-u = g & \text{ on } \partial \Omega
-\end{cases}
-$$
-</div>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true
-    }
-  });
-</script>
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 
 where $\alpha,\omega \, \text{and} \,\sigma$ are spatially varying coefficients. 
 
@@ -55,9 +30,3 @@ This uses the Walk On Spheres (WoS) method and also solves for the gradient of t
 
 We are working on providing modules to solve PDEs with the general conditions (1) and once we have worked out the math for differentiating w.r.t. a parameter that changes the domain shape, we will also supplement code to solve for that.  
 
-
-# Example README
-
-Here is a case statement in LaTeX:
-
-![cases](https://latex.codecogs.com/png.latex?%5Cbegin%7Bcases%7D%20a%20%26%20%5Ctext%7Bif%20%7D%20b%20%5C%5C%20c%20%26%20%5Ctext%7Bif%20%7D%20d%20%5Cend%7Bcases%7D)
