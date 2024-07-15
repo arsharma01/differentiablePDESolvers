@@ -3,14 +3,12 @@ From heat sinks in computers to airplane wings, Partial Differential Equations (
 
 # Description of Previous Work
 Our primary source paper is [this paper from Sawhney and Crane](https://cs.dartmouth.edu/~wjarosz/publications/sawhneyseyb22gridfree.html) where we have a stochastic method to solve PDEs of the form 
-$
-\begin{equation}\tag{1}
-\begin{cases}
+$$
+\begin{cases}\tag{1}
 \nabla\cdot(\alpha\nabla u) + \omega \cdot \nabla u - \sigma u = f & \text{ on } \Omega \\
 u = g & \text{ on } \partial \Omega
 \end{cases}
-\end{equation}
-$
+$$
 
 
 where $\alpha,\omega \, \text{and} \,\sigma$ are spatially varying coefficients. 
